@@ -1,0 +1,285 @@
+.shoes-logo {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    z-index: 1;
+    height: 60px;
+    width: 60px;
+}
+
+.man {
+    position: absolute;
+    top: 30px;
+    left: 500px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.woman {
+    position: absolute;
+    top: 30px;
+    left: 700px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.kid {
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.customize {
+    position: absolute;
+    top: 30px;
+    left: 1100px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: absolute;
+    max-width: 190px;
+    left: 1350px;
+    top: 50px;
+    z-index: 1;
+   }
+   
+   .input {
+    width: 300px;
+    height: 50px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    z-index: 1;
+   }
+   
+   .input::placeholder {
+    color: #9C9696;
+    font-family: 'Roboto';
+    font-size: 18px;
+    z-index: 1;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: #FF0000;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    z-index: 1;
+   }
+   
+   .icon {
+    position: absolute;
+    left:15px;
+    z-index: 2;
+   }
+
+   .icon-bag {
+    position: absolute;
+    z-index: 1;
+    left: 1700px;
+    top: 50px;
+    height: 50px;
+    width: 50px;
+   }
+
+   .title-shoes {
+    z-index: 1;
+    position: absolute;
+    left: 200px;
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-weight: 700;
+   }
+
+   .description-shoes {
+    z-index: 1;
+    position: absolute;
+    left: 200px;
+    top: 470px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 700;
+    color: #9C9696;
+   }
+
+   .value-shoes {
+    position: absolute;
+    left: 200px;
+    top: 530px;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: 700;
+   }
+
+   button {
+    position: relative;
+    margin: 0;
+    padding: 17px 35px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #FF0000;
+    border: #FF0000;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Roboto';
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    left: 175px;
+    top: 470px;
+    width: 300px;
+    height: 100px;
+  }
+  
+  button span {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    font-family: 'Roboto';
+  }
+  
+  button:hover {
+    animation: rotate624 0.7s ease-in-out both;
+  }
+  
+  button:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes rotate624 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+  
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+  
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes storm1261 {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+  
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+  
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
+  .btn-buy {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn-buy span {
+    z-index: 20;
+  }
+  
+  .btn-buy:after {
+    background: #ffffff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  
+  .btn-buy:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .tenis-ampliado {
+    position: absolute;
+    z-index: 1;
+    left: 1100px;
+    top: 160px;
+  }
+
+  .tenis-2 {
+    position: absolute;
+    z-index: 1;
+    left: 870px;
+    top: 700px;
+  }
+
+  .tenis-3 {
+    position: absolute;
+    z-index: 1;
+    left: 1200px;
+    top: 700px;
+  }
+
+  .tenis-4 {
+    position: absolute;
+    z-index: 1;
+    left: 1510px;
+    top: 700px;
+  }
+
+
+   
+   
+   
+   
+   
+   
+   
+
